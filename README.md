@@ -76,7 +76,11 @@
 
 #### 数据库的创建
 ```sql
+/* 创建Student库，和下面Student表同名不冲突 */
 CREATE DATABASE Student;
+
+/* 选择Student库，这样才能在这个数据库里添加表等数据 */
+SELECT DATABASE Student;
 ```
 
 #### 基本表的定义、删除与修改
