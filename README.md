@@ -36,10 +36,11 @@
 ### 例：学生-课程数据库
 &emsp;&emsp;📃 我们以学生-课程数据库为例来体现 SQL 的数据定义、数据操纵、数据查询和数据控制语句。在学生-课程数据库中包括以下三个表：
 
-+ 学生表： Student(Sno,Sname,Ssex,Sage,Sdept)
-+ 课程表： Course(Cno,Cname,Ccredit)
-+ 学生选课表： SC(Sno,Cno,Grade)
++ [学生表](#student)： Student(Sno,Sname,Ssex,Sage,Sdept)
++ [课程表](#course)： Course(Cno,Cname,Ccredit)
++ [学生选课表](#sc)： SC(Sno,Cno,Grade)
 
+<a name="student"></a>
 ***Student表：***
 
 |学号<br>Sno|姓名<br>Sname|性别<br>Ssex|年龄<br>Sage|所在系<br>Sdept|
