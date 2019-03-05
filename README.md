@@ -60,7 +60,7 @@
 |4|操作系统|2|
 
 <a name="sc"></a>
-***SC***
+***SC表：***
 
 |学号<br>Sno|课程号<br>Cno|成绩<br>Grade|
 |:--------:|:-----------:|:-----------:|
@@ -70,7 +70,25 @@
 |2017110131|2|90|
 |2017110131|3|84|
 
-#### 基本表的定义、删除与修改
-1. 定义基本表
+<div align="center">
+    <img src="pics/xiaoren.gif" width=150px>
+</div>
 
-1. 数据类型
+#### 基本表的定义、删除与修改
+```sql
+/* SQL 语言使用 CREATE TABLE 语句定义基本表（不区分大小写），其基本格式为：
+    CREATE TABLE <表名> (<列名><数据类型> [列级完整性约束条件],
+                         <列名><数据类型> [列级完整性约束条件],
+                         ...
+                         [表级完整性约束条件]
+    );
+*/
+/* 建立一个"学生表Student" */
+CREATE TABLE Student(
+    Sno CHAR(10) PRIMARY KEY,    /* 列级完整性约束条件，Sno是主键 */
+    Sname CHAR(20) UNIQUE,       /* Sname 取唯一值 */
+    Ssex bit,                    /* 用布尔类型，01表示男女 */
+    Sage SMALLINT,
+    Sdept CHAR(20)
+);
+```
