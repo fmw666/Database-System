@@ -21,3 +21,17 @@
 ### SQL 的产生与发展
 &emsp;&emsp;SQL 是在1974年由 Boyce 和 Chamberlin 提出的，最初叫 Sequel。
 
+### SQL 的特点
+&emsp;&emsp;SQL 之所以能够为用户和业界所接受并成为国际标准，是因为它是一个综合的、功能极强同时又简洁易学的语言。SQL 集数据查询（data query）、数据操纵（data manipulation）、数据定义（data definition）和数据控制（data control）功能于一体。
+
+&emsp;&emsp;SQL 功能极强，由于设计巧妙，语言十分简洁，完成核心功能只用了9个动词，SQL 接近英语口语，因此易于学习和使用。
+
+|SQL 功能|动词|
+|:-----:|:---|
+|数据查询|SELECT|
+|数据定义|CREATE，DROP，ALTER|
+|数据操纵|INSERT，UPDATE，DELETE|
+|数据控制|GRANT，REVOKE|
+
+### 例：学生-课程数据库
+
