@@ -74,6 +74,11 @@
     <img src="pics/xiaoren.gif" width=50px>
 </div>
 
+#### 数据库的创建
+```sql
+CREATE DATABASE Student;
+```
+
 #### 基本表的定义、删除与修改
 ```sql
 /* SQL 语言使用 CREATE TABLE 语句定义基本表（不区分大小写），其基本格式为：
