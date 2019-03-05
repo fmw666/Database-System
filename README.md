@@ -71,7 +71,7 @@
 |2017110131|3|84|
 
 <div align="center">
-    <img src="pics/xiaoren.gif" width=150px>
+    <img src="pics/xiaoren.gif" width=50px>
 </div>
 
 #### 基本表的定义、删除与修改
