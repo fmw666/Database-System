@@ -98,7 +98,7 @@ USE Student;
 ```
 
 <div align="center">
-    <img src="pics/" width=150px>
+    <img src="pics/table.png" width=200px>
 </div>
 
 #### 基本表的建立
@@ -132,9 +132,9 @@ CREATE TABLE SC(
     Cno CHAR(4),
     Grade SMALLINT,
     PRIMARY KEY(Sno,Cno),          /* 主键由两个属性构成，必须作为表级完整性进行定义 */
-    FOREGIN KEY(Sno) REFERENCES Student(Sno),
+    FOREIGN KEY(Sno) REFERENCES Student(Sno),
                                    /* 表级完整性约束条件，Sno是外键，被参照表是Student */
-    FOREGIN KEY(Cno) REFERENCES Course(Cno)
+    FOREIGN KEY(Cno) REFERENCES Course(Cno)
                                    /* 表级完整性约束条件，Cno是外键，被参照表是Course */
 );
 ```
