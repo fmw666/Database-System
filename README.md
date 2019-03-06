@@ -97,10 +97,6 @@ CREATE DATABASE Student;
 USE Student;
 ```
 
-<div align="center">
-    <img src="pics/table.png" width=600px>
-</div>
-
 #### 基本表的建立
 ```sql
 /* SQL 语言使用 CREATE TABLE 语句定义基本表（不区分大小写），其基本格式为：
@@ -138,6 +134,10 @@ CREATE TABLE SC(
                                    /* 表级完整性约束条件，Cno是外键，被参照表是Course */
 );
 ```
+
+<div align="center">
+    <img src="pics/table.png" width=600px>
+</div>
 
 #### 数据类型
 &emsp;&emsp;🎨 SQL 标准支持多种数据类型，要注意，不同的关系数据库管理系统中支持的数据类型不完全相同。
