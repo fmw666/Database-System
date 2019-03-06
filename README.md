@@ -205,5 +205,13 @@ DROP TABLE Student CASCADE;
 
 #### 表中数据的插入
 ```sql
-/* 以下将用三种方式 */
+/* 以下将用三种方式在Student表中插入数据 */
+INSERT INTO Student
+    VALUES('2017110110','范茂伟',0,20,'计科学院');
+    
+INSERT INTO Student(Sno,Sname,Ssex,Sage,Sdept)
+    VALUES('2017110131','李云祥',0,21,'计科学院');
+    
+INSERT INTO Student(Sname,Sno)
+    VALUES('张敏','2017100101');
 ```
