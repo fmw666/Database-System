@@ -98,7 +98,7 @@ USE Student;
 ```
 
 <div align="center">
-    <img src="pics/table.png" width=200px>
+    <img src="pics/table.png" width=600px>
 </div>
 
 #### 基本表的建立
