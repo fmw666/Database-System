@@ -83,7 +83,7 @@ CREATE DATABASE Student;
 SELECT DATABASE Student;
 ```
 
-#### 基本表的定义、删除与修改
+#### 基本表的建立
 ```sql
 /* SQL 语言使用 CREATE TABLE 语句定义基本表（不区分大小写），其基本格式为：
     CREATE TABLE <表名> (<列名><数据类型> [列级完整性约束条件],
@@ -100,4 +100,72 @@ CREATE TABLE Student(
     Sage SMALLINT,
     Sdept CHAR(20)
 );
+
+/* 建立一个"课程表Course" */
+CREATE TABLE Course(
+    Cno CHAR(4) PRIMARY KEY,      /* 列级完整性约束条件，Cno是主键 */
+    Cname CHAR(40) NOT NULL,      /* 列级完整性约束条件，Cname不能取空值 */
+    Ccredit SMALLINT             
+);
+
+/* 建立一个"选课表SC" */
+CREATE TABLE SC(
+    Sno CHAR(10),
+    Cno CHAR(4),
+    Grade SMALLINT,
+    PRIMARY KEY(Sno,Cno),          /* 主键由两个属性构成，必须作为表级完整性进行定义 */
+    FOREGIN KEY(Sno) REFERENCES Student(Sno),
+                                   /* 表级完整性约束条件，Sno是外键，被参照表是Student */
+    FOREGIN KEY(Cno) REFERENCES Course(Cno)
+                                   /* 表级完整性约束条件，Cno是外键，被参照表是Course */
+);
+```
+
+#### 数据类型
+&emsp;&emsp;SQL 标准支持多种数据类型，要注意，不同的关系数据库管理系统中支持的数据类型不完全相同。
+
+|数据类型|含义|
+|:------|:---|
+|CHAR(n)，CHARACTER(n)|长度为n的定长字符串|
+|VARCHAR(n)，<br>CHARACTERVARYING(n)|最大长度为n的变长字符串|
+|CLOB|字符串大对象|
+|BLOB|二进制大对象|
+|INT，INTEGER|长整数（4字节）|
+|SMALLINT|短整数（2字节）|
+|BIGINT|大整数（8字节）|
+|NUMERIC(p,d)|定点数，由p位数字（不包括符号、小数点）组成，小数点后面有d位数字|
+|DECIMAL(p,d)，DEC(p,d)|同NUMERIC|
+|REAL|取决于机器精度的单精度浮点数|
+|DOUBLE PRECISION|取决于机器精度的双精度浮点数|
+|FLOAT(n)|可选精度的浮点数，精度至少为n位数字|
+|BOOLEAN|逻辑布尔量|
+|DATE|日期，包含年、月、日，格式为 YYYY-MM-DD|
+|TIME|时间，包含一日的时、分、秒，格式为 HH:MM:SS|
+|TIMESTAMP|时间戳类型|
+|INTERVAL|时间间隔类型|
+
+#### 基本表的修改
+```sql
+/* SQL 语言使用 ALTER TABLE 语句修改基本表，其一般格式为：
+    ALTER TABLE <表名>
+        [ADD [COLUMN] <新列名><数据类型> [完整性约束]]
+        [ADD <表级完整性约束>]
+        [DROP [COLUMN] <列名> [CASCADE|RESTRICT]]
+        [DROP CONSTRAINT<完整性约束名> [RESTRICT|CASCADE]]
+        [ALTER COLUMN <列名><数据类型>];
+        
+    其中<表名>是要修改的基本表，ADD子句用于增加新列、新的列级完整性约束条件和新的
+    表级完整性约束条件。DROP COLUMN子句用于删除表中的列，如果指定了CASCADE短语，
+    则自动删除引用了该列的其他对象，比如视图。DROP CONSTRAINT子句用于删除指定的完
+    整性约束条件。ALTER COLUMN子句用于修改原有的列定义，包括修改列名和数据类型。
+*/
+/* 向Student表增加“入学时间”列，其数据类型为日期型 */
+ALTER TABLE Student ADD S_entrance DATE;
+/* 无论基本表中原来是否已有数据，新增加的列一律为空值 */
+
+/* 将年龄的数据类型由字符型（假设原来的数据类型是字符型）改为整数 */
+ALTER TABLE Student ALTER COLUMN Sage INT;
+
+/* 增加课程名称必须取唯一值的约束条件 */
+ALTER TABLE Course ADD UNIQUE(Cname);
 ```
