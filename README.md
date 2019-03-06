@@ -172,5 +172,15 @@ ALTER TABLE Course ADD UNIQUE(Cname);
 
 #### 基本表的删除
 ```sql
-
+/* SQL 语言使用 DROP TABLE 语句删除基本表，其一般格式为：
+    DROP TABLE <表名> [RESTRICT|CASCADE];
+    
+    若选择RESTRICT，则该表的删除是有限制条件的。欲删除的基本表不能被其他表的约束所
+    引用（如CHECK，FOREIGN KEY等约束），如果存在依赖该表的对象，则此表不能被删除。
+    若选择CASCADE，则该表的删除没有限制条件。在删除基本表的同时，相关的依赖对象都将
+    一起被删除。
+    注：默认情况是RESTRICT
+*/
+/* 删除Student表 */
+DROP TABLE Student CASCADE;
 ```
