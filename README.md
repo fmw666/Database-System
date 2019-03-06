@@ -122,13 +122,12 @@ CREATE TABLE SC(
 ```
 
 #### 数据类型
-&emsp;&emsp;SQL 标准支持多种数据类型，要注意，不同的关系数据库管理系统中支持的数据类型不完全相同。
+&emsp;&emsp;🎨 SQL 标准支持多种数据类型，要注意，不同的关系数据库管理系统中支持的数据类型不完全相同。
 
-   |数据类型|含义|
-   |:------|:---|
-   |CHAR(n)，CHARACTER(n)|长度为n的定长字符串|
-   |VARCHAR(n)，<br>CHARACTERVARYING(n)|最大长度为n的变长字符串|
-
+|数据类型|含义|
+|:------|:---|
+|CHAR(n)，CHARACTER(n)|长度为n的定长字符串|
+|VARCHAR(n)，<br>CHARACTERVARYING(n)|最大长度为n的变长字符串|
 |CLOB|字符串大对象|
 |BLOB|二进制大对象|
 |INT，INTEGER|长整数（4字节）|
@@ -169,4 +168,9 @@ ALTER TABLE Student ALTER COLUMN Sage INT;
 
 /* 增加课程名称必须取唯一值的约束条件 */
 ALTER TABLE Course ADD UNIQUE(Cname);
+```
+
+#### 基本表的删除
+```sql
+
 ```
