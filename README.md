@@ -94,8 +94,12 @@
 CREATE DATABASE Student;
 
 /* 选择Student库，这样才能在这个数据库里添加表等数据 */
-SELECT DATABASE Student;
+USE Student;
 ```
+
+<div align="center">
+    <img src="pics/" width=150px>
+</div>
 
 #### 基本表的建立
 ```sql
