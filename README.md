@@ -246,7 +246,7 @@ INSERT INTO Student
 ```
 
 <div align="center">
-    <img src="pics/demo_data.png" width=600px>
+    <img src="pics/demo_data.png" width=400px>
 </div>
 
 
