@@ -244,3 +244,9 @@ INSERT INTO Student
 INSERT INTO Student
     VALUES('2017030004','朱茜'  ,1,18,'音乐学院');
 ```
+
+<div align="center">
+    <img src="pics/demo_data.png" width=600px>
+</div>
+
+
