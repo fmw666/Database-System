@@ -215,3 +215,26 @@ INSERT INTO Student(Sno,Sname,Ssex,Sage,Sdept)
 INSERT INTO Student(Sname,Sno)
     VALUES('张敏','2017100101');
 ```
+
+#### 表中数据的查询
+&emsp;&emsp;📚 请先加下列数据插入到Student表中。
+```sql
+INSERT INTO Student
+    VALUES('2017110101','张洪',0,18,'计科学院');
+INSERT INTO Student
+    VALUES('2017110102','陈娜',1,19,'计科学院');
+INSERT INTO Student
+    VALUES('2017110103','赵玲玲',1,18,'计科学院');
+INSERT INTO Student
+    VALUES('2017110104','范茂伟',0,20,'计科学院');
+INSERT INTO Student
+    VALUES('2017110105','陈龙',0,19,'计科学院');
+INSERT INTO Student
+    VALUES('2017030001','李雅心',1,20,'音乐学院');
+INSERT INTO Student
+    VALUES('2017030002','陆海',0,21,'音乐学院');
+INSERT INTO Student
+    VALUES('2017030003','赵天成',0,20,'音乐学院');
+INSERT INTO Student
+    VALUES('2017030004','朱茜',1,18,'音乐学院');
+```
