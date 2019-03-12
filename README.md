@@ -217,7 +217,7 @@ INSERT INTO Course(Cno,Cname,Ccredit)
 INSERT INTO Course(Cname,Cno)
     VALUES('操作系统','0003');
 ```
-> 解决p中文编码](#no-jump)不能插入问题：在数据库建立时设置默认字符集编码 
+> 解决[中文编码](#no-jump)不能插入问题。在数据库建立时设置默认字符集编码： 
 ```sql
 CREATE DATABASE Student CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 ```
