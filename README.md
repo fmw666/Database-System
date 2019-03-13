@@ -252,7 +252,7 @@ INSERT INTO Student
 INSERT INTO Student
     VALUES('2017030004','朱茜'  ,1,18,'音乐学院');
 ```
-#### [\*](#no-jump) 表示查看表中所有数据。
+- **[\*](#no-jump) 表示查看表中所有数据。**
 ```sql
 SELECT * FROM Student
 ```
@@ -260,7 +260,7 @@ SELECT * FROM Student
     <img src="pics/demo_data.png" width=400px>
 </div>
 
-#### 查看表中Sno，Sname两列数据。
+- **查看表中 [Sno](#no-jump)，[Sname](#no-jump) 两列数据。**
 ```sql
 SELECT Sno，Sname FROM Student
 ```
