@@ -222,6 +222,10 @@ INSERT INTO Course(Cname,Cno)
 CREATE DATABASE Student CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 ```
 
+<div align="center">
+    <img src="pics/video.gif" width=800px>
+</div>
+
 #### 表中数据的查询
 &emsp;&emsp;📚 请先加下列数据插入到Student表中。
 ```sql
