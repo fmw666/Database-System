@@ -272,7 +272,7 @@ INSERT INTO Student
     SELECT Sno，Sname FROM Student;
     ```
     <div align="left">
-        <img src="pics/snosname.png" width=400px>
+        <img src="pics/SnoSname.png" width=400px>
     </div>
 
 ---
@@ -284,6 +284,15 @@ INSERT INTO Student
     ```
     <div align="left">
         <img src="pics/2019-sage.png" width=400px>
+    </div>
+    
+  - **查询经过计算的值：查看表中 [Sname](#no-jump)，['Year of Birth:'](#no-jump),[2019-Sage](#no-jump),[LOWER(Sdept)](#no-jump) 数据（其中LOWER()函数是把列中大写字母转化为小写）。**
+  
+    ```sql
+    SELECT Sname,'Year of Birth:',2019-Sage,LOWER(Sdept) FROM Student;
+    ```
+    <div align="left">
+        <img src="pics/lower.png" width=400px>
     </div>
 
 ---
