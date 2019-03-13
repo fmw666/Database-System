@@ -252,8 +252,8 @@ INSERT INTO Student
 INSERT INTO Student
     VALUES('2017030004','朱茜'  ,1,18,'音乐学院');
 ```
-
-<div align="center">
+> `SELECT * FROM 'table_name'`表示查看表中所有数据。
+<div align="left">
     <img src="pics/demo_data.png" width=400px>
 </div>
 
