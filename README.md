@@ -228,7 +228,7 @@ CREATE DATABASE Student CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
 ---
 
-[返回目录⬆](#快捷目录)
+[返回目录⬆](#目录)
 
 ### 表中数据的查询
 &emsp;&emsp;📚 请先加下列数据插入到Student表中。
@@ -252,9 +252,18 @@ INSERT INTO Student
 INSERT INTO Student
     VALUES('2017030004','朱茜'  ,1,18,'音乐学院');
 ```
-> `SELECT * FROM 'table_name'`表示查看表中所有数据。
+#### * 表示查看表中所有数据。
+```sql
+SELECT * FROM Student
+```
 <div align="left">
     <img src="pics/demo_data.png" width=400px>
 </div>
-
+#### 查看表中Sno，Sname两列数据。
+```sql
+SELECT Sno，Sname FROM Student
+```
+<div align="left">
+    <img src="pics/demo_data.png" width=400px>
+</div>
 
