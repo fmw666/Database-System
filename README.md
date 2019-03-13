@@ -141,7 +141,7 @@ CREATE TABLE SC(
     <img src="pics/table.png" width=600px>
 </div>
 
-#### 数据类型
+### 数据类型
 &emsp;&emsp;🎨 SQL 标准支持多种数据类型，要注意，不同的关系数据库管理系统中支持的数据类型不完全相同。
 
 |数据类型|含义|
@@ -230,7 +230,7 @@ CREATE DATABASE Student CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
 [返回目录⬆](#快捷目录)
 
-#### 表中数据的查询
+### 表中数据的查询
 &emsp;&emsp;📚 请先加下列数据插入到Student表中。
 ```sql
 INSERT INTO Student
