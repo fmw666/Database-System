@@ -294,6 +294,17 @@ INSERT INTO Student
     <div align="left">
         <img src="pics/lower.png" width=400px>
     </div>
+    
+- **用户通过指定别名来改变查询结果的列标题。**
+  
+    ```sql
+    SELECT Sname NAME,'Year of Birth:' BIRTH,
+        2019-Sage BIRTHDAY,LOWER(Sdept) DEPARTMENT 
+        FROM Student;
+    ```
+    <div align="left">
+        <img src="pics/setname.png" width=400px>
+    </div>
 
 ---
 
