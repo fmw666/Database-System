@@ -256,6 +256,7 @@ INSERT INTO Student
 ---
 
 - **[\*](#no-jump) 表示查看表中所有数据。**
+
     ```sql
     SELECT * FROM Student;
     ```
@@ -266,6 +267,7 @@ INSERT INTO Student
 ---
 
 - **查看表中 [Sno](#no-jump)，[Sname](#no-jump) 两列数据。**
+
     ```sql
     SELECT Sno，Sname FROM Student;
     ```
@@ -276,6 +278,7 @@ INSERT INTO Student
 ---
 
 - **查询经过计算的值：查看表中 [Sname](#no-jump)，[2019-Sage](#no-jump) 两列数据。**
+
     ```sql
     SELECT Sname,2019-Sage FROM Student;
     ```
