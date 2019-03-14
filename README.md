@@ -141,6 +141,10 @@ CREATE TABLE SC(
     <img src="pics/table.png" width=600px>
 </div>
 
+---
+
+[返回目录⬆](#目录)
+
 ### 数据类型
 &emsp;&emsp;🎨 SQL 标准支持多种数据类型，要注意，不同的关系数据库管理系统中支持的数据类型不完全相同。
 
@@ -308,5 +312,8 @@ INSERT INTO Student
 
 ---
 
+---
+
+[返回目录⬆](#目录)
 
 
