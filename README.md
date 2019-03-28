@@ -283,6 +283,12 @@ INSERT INTO SC
     VALUES('2017110105','1001',89);
 INSERT INTO SC
     VALUES('2017110105','1002',97);
+INSERT INTO SC
+    VALUES('2017110105','1003',58);
+INSERT INTO SC
+    VALUES('2017030001','1003',59);
+INSERT INTO SC
+    VALUES('2017030002','1003',68);
 ```
 ---
 
@@ -375,8 +381,46 @@ INSERT INTO SC
     SELECT Sname,Sage FROM Student 
 	    WHERE Sage<20;
     ```
+    <div align="left">
+        <img src="pics/where2.png" width=400px>
+    </div>
     
 ---
+
+- **通过where来查询满足条件的元组：考试成绩大于等于90。**
+
+	```sql
+	SELECT DISTINCT Sno FROM SC
+		WHERE Grade<60;
+	```
+	<div align="left">
+        <img src="pics/where3.png" width=400px>
+    </div>
+	
+---
+	
+- **通过where来查询满足条件的元组：查询年龄在20~23岁（包括20岁和23岁）的学生信息。**
+
+	```sql
+	SELECT * FROM Student
+		WHERE Sage BETWEEN 20 AND 23;
+	```
+	<div align="left">
+        <img src="pics/where4.png" width=400px>
+    </div>
+
+---
+	
+- **通过where来查询满足条件的元组：查询年龄不在20~23岁（包括20岁和23岁）的学生信息。**
+
+	```sql
+	SELECT * FROM Student
+		WHERE Sage NOT BETWEEN 20 AND 23;
+	```
+	<div align="left">
+        <img src="pics/where5.png" width=400px>
+    </div>
+
 
 
 ---
