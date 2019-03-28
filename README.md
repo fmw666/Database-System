@@ -26,13 +26,13 @@
   
   &emsp;&emsp;🏷 **[表中数据的查询](#表中数据的查询)**
   
-  &emsp;&emsp;&emsp;&emsp;&emsp;— [csafeadsdf的查询](#表中数据的查询)
+  &emsp;&emsp;&emsp;&emsp;— [csafeadsdf的查询](#表中数据的查询)
   
-  &emsp;&emsp;&emsp;&emsp;&emsp;— [asdasdascs](#表中数据的查询)
+  &emsp;&emsp;&emsp;&emsp;— [asdasdascs](#表中数据的查询)
   
   ### [📁非关系型的数据库NoSQL](#2)
   
-  &emsp;&emsp;[🏷 MongoDB](#no)
+  &emsp;&emsp;🏷 **[MongoDB](#no)**
 
 <a name="1"></a>
 ## 关系数据库及标准语言SQL
@@ -425,7 +425,54 @@ INSERT INTO SC
         <img src="pics/where5.png" width=400px>
     </div>
 
+---
+	
+- **通过where来查询满足条件的元组：查询年龄为18岁和21岁的学生信息。**
 
+	```sql
+	SELECT * FROM Student
+		WHERE Sage IN(18,21);
+	```
+	<div align="left">
+        <img src="pics/where6.png" width=400px>
+    </div>
+
+---
+	
+- **通过where来查询满足条件的元组：查询年龄不为18岁和21岁的学生信息。**
+
+	```sql
+	SELECT * FROM Student
+		WHERE Sage NOT IN(18,21);
+	```
+	<div align="left">
+        <img src="pics/where7.png" width=400px>
+    </div>
+	
+---
+	
+- **通过where来查询满足条件的元组：查询所有陈姓的学生信息。**
+
+	```sql
+	SELECT Sno,Sname,Ssex FROM Student
+		WHERE Sname LIKE '陈%';
+	```
+	<div align="left">
+        <img src="pics/where8.png" width=400px>
+    </div>
+
+---
+	
+- **通过where来查询满足条件的元组：查询学号为201711010x的学生信息。**
+
+	```sql
+	SELECT * FROM Student
+		WHERE Sno LIKE '201711010_';
+	```
+	> 注意：数据库字符集为 ASCII 时一个汉字需要两个_；当字符集为 GBK 时只需要一个_。
+	<div align="left">
+        <img src="pics/where9.png" width=400px>
+    </div>
 
 ---
 
