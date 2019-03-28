@@ -261,6 +261,7 @@ INSERT INTO Student
     VALUES('2017030004','朱茜'  ,1,18,'音乐学院');
 ```
 &emsp;&emsp;📚 将下列数据插入到Course表中。
+
     > 因为外键原因，必须先插入Course表数据才能插入SC表数据。
 ```sql
 INSERT INTO Course
