@@ -239,7 +239,7 @@ CREATE DATABASE Student CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 [返回目录⬆](#目录)
 
 ### 表中数据的查询
-&emsp;&emsp;📚 请先加下列数据插入到Student表中。
+&emsp;&emsp;📚 请先将下列数据插入到Student表中。
 ```sql
 INSERT INTO Student
     VALUES('2017110101','张洪'  ,0,18,'计科学院');
@@ -260,7 +260,29 @@ INSERT INTO Student
 INSERT INTO Student
     VALUES('2017030004','朱茜'  ,1,18,'音乐学院');
 ```
-
+&emsp;&emsp;📚 将下列数据插入到Course表中。
+    > 因为外键原因，必须先插入Course表数据才能插入SC表数据。
+```sql
+INSERT INTO Course
+    VALUES('1001','离散数学',5);
+INSERT INTO Course
+    VALUES('1002','数据库'  ,4);
+INSERT INTO Course
+    VALUES('1003','高等数学',2);
+```
+&emsp;&emsp;📚 将下列数据插入到SC表中。
+```sql
+INSERT INTO SC
+    VALUES('2017110104','1001',92);
+INSERT INTO SC
+    VALUES('2017110104','1002',86);
+INSERT INTO SC
+    VALUES('2017110104','1003',91);
+INSERT INTO SC
+    VALUES('2017110105','1001',89);
+INSERT INTO SC
+    VALUES('2017110105','1002',97);
+```
 ---
 
 - **[\*](#no-jump) 表示查看表中所有数据。**
@@ -294,6 +316,8 @@ INSERT INTO Student
         <img src="pics/2019-sage.png" width=400px>
     </div>
     
+---
+    
 - **查询经过计算的值：查看表中 [Sname](#no-jump)，['Year of Birth:'](#no-jump),[2019-Sage](#no-jump),[LOWER(Sdept)](#no-jump) 数据（其中LOWER()函数是把列中大写字母转化为小写）。**
   
     ```sql
@@ -302,6 +326,8 @@ INSERT INTO Student
     <div align="left">
         <img src="pics/lower.png" width=400px>
     </div>
+    
+---
     
 - **用户通过指定别名来改变查询结果的列标题。**
   
@@ -315,6 +341,42 @@ INSERT INTO Student
     </div>
 
 ---
+
+- **消除取值重复的行。**
+
+    ```sql
+    SELECT DISTINCT Sage FROM Student;
+    ```
+    <div align="left">
+        <img src="pics/sage.png" width=400px>
+    </div>
+    <div align="left">
+        <img src="pics/distinct.png" width=400px>
+    </div>
+
+---
+
+- **通过where来查询满足条件的元组：查询"计科学院"全体学生的名单。**
+
+    ```sql
+    SELECT Sno,Sname FROM Student 
+	    WHERE Sdept='计科学院';
+    ```
+    <div align="left">
+        <img src="pics/where1.png" width=400px>
+    </div>
+
+---
+
+- **通过where来查询满足条件的元组：查询年龄在20岁以下的学生姓名及其年龄。**
+
+    ```sql
+    SELECT Sname,Sage FROM Student 
+	    WHERE Sage<20;
+    ```
+    
+---
+
 
 ---
 
