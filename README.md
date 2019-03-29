@@ -32,9 +32,9 @@
   
   ### 🏷[非关系型的数据库NoSQL](#2)
   
-  &emsp;&emsp;🏷 **[基于分布式文件存储的数据库 MongoDB](#no)**
+  &emsp;&emsp;📚 **[基于分布式文件存储的数据库 MongoDB](#no)**
   
-  &emsp;&emsp;🏷 **[高性能的key-value数据库 Redis](#no)**
+  &emsp;&emsp;📚 **[高性能的key-value数据库 Redis](#no)**
 
 <a name="1"></a>
 ## 关系数据库及标准语言SQL
