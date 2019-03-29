@@ -308,6 +308,7 @@ INSERT INTO SC
 ```
 ---
 
+<a name="表示查看表中所有数据"></a>
 - **[\*](#no-jump) 表示查看表中所有数据。**
 
     ```sql
@@ -319,6 +320,7 @@ INSERT INTO SC
 
 ---
 
+<a name="查看表中某列数据"></a>
 - **查看表中 [Sno](#no-jump)，[Sname](#no-jump) 两列数据。**
 
     ```sql
@@ -330,6 +332,7 @@ INSERT INTO SC
 
 ---
 
+<a name="查询经过计算的值"></a>
 - **查询经过计算的值：查看表中 [Sname](#no-jump)，[2019-Sage](#no-jump) 两列数据。**
 
     ```sql
@@ -352,6 +355,7 @@ INSERT INTO SC
     
 ---
     
+<a name="用户通过指定别名来改变查询结果的列标题"></a>
 - **用户通过指定别名来改变查询结果的列标题。**
   
     ```sql
@@ -365,6 +369,7 @@ INSERT INTO SC
 
 ---
 
+<a name="消除取值重复的行"></a>
 - **消除取值重复的行。**
 
     ```sql
@@ -379,6 +384,7 @@ INSERT INTO SC
 
 ---
 
+<a name="通过where来查询满足条件的元组"></a>
 - **通过where来查询满足条件的元组：查询"计科学院"全体学生的名单。**
 
     ```sql
