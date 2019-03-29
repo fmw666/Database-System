@@ -26,9 +26,9 @@
   
   &emsp;&emsp;🏷 **[表中数据的查询](#表中数据的查询)**
   
-  &emsp;&emsp;&emsp;&emsp;— [csafeadsdf的查询](#表中数据的查询)
+  &emsp;&emsp;&emsp;&emsp;⭐ [csafeadsdf的查询](#表中数据的查询)
   
-  &emsp;&emsp;&emsp;&emsp;— [asdasdascs](#表中数据的查询)
+  &emsp;&emsp;&emsp;&emsp;⭐ [asdasdascs](#表中数据的查询)
   
   ### 📁[非关系型的数据库NoSQL](#2)
   
