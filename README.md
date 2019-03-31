@@ -47,7 +47,7 @@
   &emsp;&emsp;📚 **[高性能的key-value数据库 Redis](#no)**
 
 <div align="center">
-	<img src="https://github.com/fmw666/Database-System/blob/master/pics/noodle.jpg" width=300px>
+	<img src="https://github.com/fmw666/Database-System/blob/master/pics/noodle.jpg" width=150px>
 </div>
 
 <a name="1"></a>
