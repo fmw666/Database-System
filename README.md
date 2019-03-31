@@ -428,7 +428,7 @@ SELECT * FROM Student
 	WHERE Sage BETWEEN 20 AND 23;
 ```
 <div align="left">
-	<img src="pics/where4.png" width=400px>
+	<img src="pics/where4.png" border:2px; width=400px>
 </div>
 
 ---
