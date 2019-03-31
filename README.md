@@ -106,7 +106,7 @@
 |2017110131|2|90|
 |2017110131|3|84|
 
-<div align="center">
+<div align="center" style="border:1px">
     <img src="pics/xiaoren.gif" width=50px>
 </div>
 
