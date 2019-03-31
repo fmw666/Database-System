@@ -315,7 +315,7 @@ INSERT INTO SC
 SELECT * FROM Student;
 ```
 <div align="left">
-	<img src="pics/demo_data.png" width=400px>
+	<img src="pics/demo_data.png">
 </div>
 
 ---
@@ -327,7 +327,7 @@ SELECT * FROM Student;
 SELECT Sno,Sname FROM Student;
 ```
 <div align="left">
-	<img src="pics/SnoSname.png" width=200px>
+	<img src="pics/SnoSname.png">
 </div>
 
 ---
@@ -339,7 +339,7 @@ SELECT Sno,Sname FROM Student;
 SELECT Sname,2019-Sage FROM Student;
 ```
 <div align="left">
-	<img src="pics/2019-sage.png" width=200px>
+	<img src="pics/2019-sage.png">
 </div>
     
 ---
@@ -350,7 +350,7 @@ SELECT Sname,2019-Sage FROM Student;
 SELECT Sname,'Year of Birth:',2019-Sage,LOWER(Sdept) FROM Student;
 ```
 <div align="left">
-	<img src="pics/lower.png" width=400px>
+	<img src="pics/lower.png">
 </div>
     
 ---
@@ -364,7 +364,7 @@ SELECT Sname NAME,'Year of Birth:' BIRTH,
 	FROM Student;
 ```
 <div align="left">
-	<img src="pics/setname.png" width=400px>
+	<img src="pics/setname.png">
 </div>
 
 ---
@@ -376,8 +376,8 @@ SELECT Sname NAME,'Year of Birth:' BIRTH,
 SELECT DISTINCT Sage FROM Student;
 ```
 <div align="left">
-	<img src="pics/sage.png" width=100px>
-	<img src="pics/distinct.png" width=100px>
+	<img src="pics/sage.png">
+	<img src="pics/distinct.png">
 </div>
 
 ---
@@ -390,7 +390,7 @@ SELECT Sno,Sname FROM Student
 	WHERE Sdept='计科学院';
 ```
 <div align="left">
-	<img src="pics/where1.png" width=200px>
+	<img src="pics/where1.png">
 </div>
 
 ---
@@ -402,7 +402,7 @@ SELECT Sname,Sage FROM Student
 	WHERE Sage<20;
 ```
 <div align="left">
-	<img src="pics/where2.png" width=200px>
+	<img src="pics/where2.png">
 </div>
     
 ---
@@ -414,7 +414,7 @@ SELECT DISTINCT Sno FROM SC
 	WHERE Grade<60;
 ```
 <div align="left">
-	<img src="pics/where3.png" width=100px>
+	<img src="pics/where3.png">
 </div>
 	
 ---
@@ -426,7 +426,7 @@ SELECT * FROM Student
 	WHERE Sage BETWEEN 20 AND 23;
 ```
 <div align="left">
-	<img src="pics/where4.png" border:2px; width=400px>
+	<img src="pics/where4.png">
 </div>
 
 ---
@@ -438,7 +438,7 @@ SELECT * FROM Student
 	WHERE Sage NOT BETWEEN 20 AND 23;
 ```
 <div align="left">
-	<img src="pics/where5.png" width=400px>
+	<img src="pics/where5.png">
 </div>
 
 ---
@@ -450,7 +450,7 @@ SELECT * FROM Student
 	WHERE Sage IN(18,21);
 ```
 <div align="left">
-	<img src="pics/where6.png" width=400px>
+	<img src="pics/where6.png">
 </div>
 
 ---
@@ -462,7 +462,7 @@ SELECT * FROM Student
 	WHERE Sage NOT IN(18,21);
 ```
 <div align="left">
-	<img src="pics/where7.png" width=400px>
+	<img src="pics/where7.png">
 </div>
 	
 ---
@@ -474,7 +474,7 @@ SELECT Sno,Sname,Ssex FROM Student
 	WHERE Sname LIKE '陈%';
 ```
 <div align="left">
-	<img src="pics/where8.png" width=300px>
+	<img src="pics/where8.png">
 </div>
 
 ---
@@ -487,7 +487,7 @@ SELECT * FROM Student
 ```
 > 注意：数据库字符集为 ASCII 时一个汉字需要两个_；当字符集为 GBK 时只需要一个_。
 <div align="left">
-	<img src="pics/where9.png" width=400px>
+	<img src="pics/where9.png">
 </div>
 
 ---
