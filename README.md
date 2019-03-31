@@ -254,7 +254,7 @@ CREATE DATABASE Student CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
 [返回目录⬆](#目录)
 
-### 表中数据的查询
+## 表中数据的查询
 &emsp;&emsp;📚 请先将下列数据插入到Student表中。
 ```sql
 INSERT INTO Student
@@ -309,7 +309,7 @@ INSERT INTO SC
 ---
 
 <a name="表示查看表中所有数据"></a>
-- **[\*](#no-jump) 表示查看表中所有数据。**
+### [\*](#no-jump) 表示查看表中所有数据。
 
     ```sql
     SELECT * FROM Student;
@@ -320,8 +320,7 @@ INSERT INTO SC
 
 ---
 
-<a name="查看表中某列数据"></a>
-- **查看表中 [Sno](#no-jump)，[Sname](#no-jump) 两列数据。**
+### 查看表中 [Sno](#no-jump)，[Sname](#no-jump) 两列数据。
 
     ```sql
     SELECT Sno,Sname FROM Student;
