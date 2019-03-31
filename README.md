@@ -500,7 +500,7 @@ SELECT * FROM Student
 
 <br><br><br><br>
 
-## 非关系型的数据库NoSQL
+## ☆ 非关系型的数据库NoSQL
 
 <div align="center">
 	<img src="https://github.com/fmw666/Database-System/blob/master/pics/zhouyi.jpeg" width=200px>
