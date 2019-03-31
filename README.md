@@ -2,7 +2,7 @@
 &emsp;&emsp;*数据库系统（Database System，DBS），是由数据库及其管理软件组成的系统。它是为适应数据处理的需要而发展起来的一种较为理想的数据处理的核心机构。它是一个实际可运行的存储、维护和应用系统提供数据的软件系统，是存储介质、处理对象和管理系统的集合体。*
 
 <div align="center">
-    <img src="pics/donman.jpg" border="1" width=200px>
+    <img src="pics/donman.jpg" border="2" width=200px>
 </div>
 
 ## 目录
