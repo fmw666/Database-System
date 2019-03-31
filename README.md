@@ -311,186 +311,186 @@ INSERT INTO SC
 <a name="表示查看表中所有数据"></a>
 ### [\*](#no-jump) 表示查看表中所有数据。
 
-    ```sql
-    SELECT * FROM Student;
-    ```
-    <div align="left">
-        <img src="pics/demo_data.png" width=400px>
-    </div>
+```sql
+SELECT * FROM Student;
+```
+<div align="left">
+	<img src="pics/demo_data.png" width=400px>
+</div>
 
 ---
 
-<a name="表示查看表中某列数据"></a>
+<a name="查看表中某列数据"></a>
 ### 查看表中 [Sno](#no-jump)，[Sname](#no-jump) 两列数据。
 
-    ```sql
-    SELECT Sno,Sname FROM Student;
-    ```
-    <div align="left">
-        <img src="pics/SnoSname.png" width=400px>
-    </div>
+```sql
+SELECT Sno,Sname FROM Student;
+```
+<div align="left">
+	<img src="pics/SnoSname.png" width=400px>
+</div>
 
 ---
 
 <a name="查询经过计算的值"></a>
 ### 查询经过计算的值：查看表中 [Sname](#no-jump)，[2019-Sage](#no-jump) 两列数据。
 
-    ```sql
-    SELECT Sname,2019-Sage FROM Student;
-    ```
-    <div align="left">
-        <img src="pics/2019-sage.png" width=400px>
-    </div>
+```sql
+SELECT Sname,2019-Sage FROM Student;
+```
+<div align="left">
+	<img src="pics/2019-sage.png" width=400px>
+</div>
     
 ---
     
 ### 查询经过计算的值：查看表中 [Sname](#no-jump)，['Year of Birth:'](#no-jump),[2019-Sage](#no-jump),[LOWER(Sdept)](#no-jump) 数据（其中LOWER()函数是把列中大写字母转化为小写）。
   
-    ```sql
-    SELECT Sname,'Year of Birth:',2019-Sage,LOWER(Sdept) FROM Student;
-    ```
-    <div align="left">
-        <img src="pics/lower.png" width=400px>
-    </div>
+```sql
+SELECT Sname,'Year of Birth:',2019-Sage,LOWER(Sdept) FROM Student;
+```
+<div align="left">
+	<img src="pics/lower.png" width=400px>
+</div>
     
 ---
     
 <a name="用户通过指定别名来改变查询结果的列标题"></a>
 ### 用户通过指定别名来改变查询结果的列标题。
   
-    ```sql
-    SELECT Sname NAME,'Year of Birth:' BIRTH,
-        2019-Sage BIRTHDAY,LOWER(Sdept) DEPARTMENT 
-        FROM Student;
-    ```
-    <div align="left">
-        <img src="pics/setname.png" width=400px>
-    </div>
+```sql
+SELECT Sname NAME,'Year of Birth:' BIRTH,
+	2019-Sage BIRTHDAY,LOWER(Sdept) DEPARTMENT 
+	FROM Student;
+```
+<div align="left">
+	<img src="pics/setname.png" width=400px>
+</div>
 
 ---
 
 <a name="消除取值重复的行"></a>
 ### 消除取值重复的行。
 
-    ```sql
-    SELECT DISTINCT Sage FROM Student;
-    ```
-    <div align="left">
-        <img src="pics/sage.png" width=400px>
-    </div>
-    <div align="left">
-        <img src="pics/distinct.png" width=400px>
-    </div>
+```sql
+SELECT DISTINCT Sage FROM Student;
+```
+<div align="left">
+	<img src="pics/sage.png" width=400px>
+</div>
+<div align="left">
+	<img src="pics/distinct.png" width=400px>
+</div>
 
 ---
 
 <a name="通过where来查询满足条件的元组"></a>
 ### 通过where来查询满足条件的元组：查询"计科学院"全体学生的名单。
 
-    ```sql
-    SELECT Sno,Sname FROM Student 
-	    WHERE Sdept='计科学院';
-    ```
-    <div align="left">
-        <img src="pics/where1.png" width=400px>
-    </div>
+```sql
+SELECT Sno,Sname FROM Student 
+	WHERE Sdept='计科学院';
+```
+<div align="left">
+	<img src="pics/where1.png" width=400px>
+</div>
 
 ---
 
 ### 通过where来查询满足条件的元组：查询年龄在20岁以下的学生姓名及其年龄。
 
-    ```sql
-    SELECT Sname,Sage FROM Student 
-	    WHERE Sage<20;
-    ```
-    <div align="left">
-        <img src="pics/where2.png" width=400px>
-    </div>
+```sql
+SELECT Sname,Sage FROM Student 
+	WHERE Sage<20;
+```
+<div align="left">
+	<img src="pics/where2.png" width=400px>
+</div>
     
 ---
 
 ### 通过where来查询满足条件的元组：考试成绩大于等于90。
 
-	```sql
-	SELECT DISTINCT Sno FROM SC
-		WHERE Grade<60;
-	```
-	<div align="left">
-        <img src="pics/where3.png" width=400px>
-    </div>
+```sql
+SELECT DISTINCT Sno FROM SC
+	WHERE Grade<60;
+```
+<div align="left">
+	<img src="pics/where3.png" width=400px>
+</div>
 	
 ---
 	
 ### 通过where来查询满足条件的元组：查询年龄在20~23岁（包括20岁和23岁）的学生信息。
 
-	```sql
-	SELECT * FROM Student
-		WHERE Sage BETWEEN 20 AND 23;
-	```
-	<div align="left">
-        <img src="pics/where4.png" width=400px>
-    </div>
+```sql
+SELECT * FROM Student
+	WHERE Sage BETWEEN 20 AND 23;
+```
+<div align="left">
+	<img src="pics/where4.png" width=400px>
+</div>
 
 ---
 	
 ### 通过where来查询满足条件的元组：查询年龄不在20~23岁（包括20岁和23岁）的学生信息。
 
-	```sql
-	SELECT * FROM Student
-		WHERE Sage NOT BETWEEN 20 AND 23;
-	```
-	<div align="left">
-        <img src="pics/where5.png" width=400px>
-    </div>
+```sql
+SELECT * FROM Student
+	WHERE Sage NOT BETWEEN 20 AND 23;
+```
+<div align="left">
+	<img src="pics/where5.png" width=400px>
+</div>
 
 ---
 	
 ### 通过where来查询满足条件的元组：查询年龄为18岁和21岁的学生信息。
 
-	```sql
-	SELECT * FROM Student
-		WHERE Sage IN(18,21);
-	```
-	<div align="left">
-        <img src="pics/where6.png" width=400px>
-    </div>
+```sql
+SELECT * FROM Student
+	WHERE Sage IN(18,21);
+```
+<div align="left">
+	<img src="pics/where6.png" width=400px>
+</div>
 
 ---
 	
 ### 通过where来查询满足条件的元组：查询年龄不为18岁和21岁的学生信息。
 
-	```sql
-	SELECT * FROM Student
-		WHERE Sage NOT IN(18,21);
-	```
-	<div align="left">
-        <img src="pics/where7.png" width=400px>
-    </div>
+```sql
+SELECT * FROM Student
+	WHERE Sage NOT IN(18,21);
+```
+<div align="left">
+	<img src="pics/where7.png" width=400px>
+</div>
 	
 ---
 	
 ### 通过where来查询满足条件的元组：查询所有陈姓的学生信息。
 
-	```sql
-	SELECT Sno,Sname,Ssex FROM Student
-		WHERE Sname LIKE '陈%';
-	```
-	<div align="left">
-        <img src="pics/where8.png" width=400px>
-    </div>
+```sql
+SELECT Sno,Sname,Ssex FROM Student
+	WHERE Sname LIKE '陈%';
+```
+<div align="left">
+	<img src="pics/where8.png" width=400px>
+</div>
 
 ---
 	
 ### 通过where来查询满足条件的元组：查询学号为201711010x的学生信息。
 
-	```sql
-	SELECT * FROM Student
-		WHERE Sno LIKE '201711010_';
-	```
-	> 注意：数据库字符集为 ASCII 时一个汉字需要两个_；当字符集为 GBK 时只需要一个_。
-	<div align="left">
-        <img src="pics/where9.png" width=400px>
-    </div>
+```sql
+SELECT * FROM Student
+	WHERE Sno LIKE '201711010_';
+```
+> 注意：数据库字符集为 ASCII 时一个汉字需要两个_；当字符集为 GBK 时只需要一个_。
+<div align="left">
+	<img src="pics/where9.png" width=400px>
+</div>
 
 ---
 
