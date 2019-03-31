@@ -47,7 +47,7 @@
   &emsp;&emsp;📚 **[高性能的key-value数据库 Redis](#no)**
 
 <a name="1"></a>
-## 关系数据库及标准语言SQL
+# 关系数据库及标准语言SQL
 &emsp;&emsp;🛢 **结构化查询语言（Structured Query Language， SQL）** 是关系数据库的标准语言，也是一个通用的、功能极强的关系数据库语言。其功能不仅仅是查询，而是包括数据库模式创建、数据库数据的插入与修改、数据库安全性完整性定义与控制等一系列功能。
 
 <div align="center">
