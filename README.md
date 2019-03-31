@@ -497,7 +497,7 @@ SELECT * FROM Student
 ## 非关系型的数据库NoSQL
 
 <div align="center">
-	<img src="https://github.com/fmw666/Database-System/blob/master/pics/zhouyi.jpeg" width=400px>
+	<img src="https://github.com/fmw666/Database-System/blob/master/pics/zhouyi.jpeg" width=200px>
 </div>
 
 &emsp;&emsp;**NoSQL(NoSQL = Not Only SQL )，意为"不仅仅是SQL"** ，是对不同于传统的关系型数据库的数据库管理系统的统称。NoSQL 是一项全新的数据库革命性运动，早期就有人提出，发展至2009年趋势越发高涨。NoSQL的拥护者们提倡运用非关系型的数据存储，相对于铺天盖地的关系型数据库运用，这一概念无疑是一种全新的思维的注入。
