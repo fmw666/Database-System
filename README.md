@@ -327,7 +327,7 @@ SELECT * FROM Student;
 SELECT Sno,Sname FROM Student;
 ```
 <div align="left">
-	<img src="pics/SnoSname.png" width=400px>
+	<img src="pics/SnoSname.png" width=200px>
 </div>
 
 ---
@@ -339,7 +339,7 @@ SELECT Sno,Sname FROM Student;
 SELECT Sname,2019-Sage FROM Student;
 ```
 <div align="left">
-	<img src="pics/2019-sage.png" width=400px>
+	<img src="pics/2019-sage.png" width=200px>
 </div>
     
 ---
@@ -376,10 +376,8 @@ SELECT Sname NAME,'Year of Birth:' BIRTH,
 SELECT DISTINCT Sage FROM Student;
 ```
 <div align="left">
-	<img src="pics/sage.png" width=400px>
-</div>
-<div align="left">
-	<img src="pics/distinct.png" width=400px>
+	<img src="pics/sage.png" width=200px>
+	<img src="pics/distinct.png" width=200px>
 </div>
 
 ---
@@ -392,7 +390,7 @@ SELECT Sno,Sname FROM Student
 	WHERE Sdept='计科学院';
 ```
 <div align="left">
-	<img src="pics/where1.png" width=400px>
+	<img src="pics/where1.png" width=300px>
 </div>
 
 ---
@@ -404,7 +402,7 @@ SELECT Sname,Sage FROM Student
 	WHERE Sage<20;
 ```
 <div align="left">
-	<img src="pics/where2.png" width=400px>
+	<img src="pics/where2.png" width=300px>
 </div>
     
 ---
@@ -416,7 +414,7 @@ SELECT DISTINCT Sno FROM SC
 	WHERE Grade<60;
 ```
 <div align="left">
-	<img src="pics/where3.png" width=400px>
+	<img src="pics/where3.png" width=200px>
 </div>
 	
 ---
