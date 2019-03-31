@@ -309,7 +309,7 @@ INSERT INTO SC
 ---
 
 <a name="表示查看表中所有数据"></a>
-#### [\*](#no-jump) 表示查看表中所有数据。
+#### ⭐ [\*](#no-jump) 表示查看表中所有数据。
 
 ```sql
 SELECT * FROM Student;
@@ -321,7 +321,7 @@ SELECT * FROM Student;
 ---
 
 <a name="查看表中某列数据"></a>
-#### 查看表中 [Sno](#no-jump)，[Sname](#no-jump) 两列数据。
+#### ⭐ 查看表中 [Sno](#no-jump)，[Sname](#no-jump) 两列数据。
 
 ```sql
 SELECT Sno,Sname FROM Student;
@@ -333,7 +333,7 @@ SELECT Sno,Sname FROM Student;
 ---
 
 <a name="查询经过计算的值"></a>
-#### 查询经过计算的值：查看表中 [Sname](#no-jump)，[2019-Sage](#no-jump) 两列数据。
+#### ⭐ 查询经过计算的值：查看表中 [Sname](#no-jump)，[2019-Sage](#no-jump) 两列数据。
 
 ```sql
 SELECT Sname,2019-Sage FROM Student;
@@ -344,7 +344,7 @@ SELECT Sname,2019-Sage FROM Student;
     
 ---
     
-#### 查询经过计算的值：查看表中 [Sname](#no-jump)，['Year of Birth:'](#no-jump),[2019-Sage](#no-jump),[LOWER(Sdept)](#no-jump) 数据（其中LOWER()函数是把列中大写字母转化为小写）。
+#### ⭐ 查询经过计算的值：查看表中 [Sname](#no-jump)，['Year of Birth:'](#no-jump),[2019-Sage](#no-jump),[LOWER(Sdept)](#no-jump) 数据（其中LOWER()函数是把列中大写字母转化为小写）。
   
 ```sql
 SELECT Sname,'Year of Birth:',2019-Sage,LOWER(Sdept) FROM Student;
@@ -356,7 +356,7 @@ SELECT Sname,'Year of Birth:',2019-Sage,LOWER(Sdept) FROM Student;
 ---
     
 <a name="用户通过指定别名来改变查询结果的列标题"></a>
-#### 用户通过指定别名来改变查询结果的列标题。
+#### ⭐ 通过指定别名来改变查询结果的列标题。
   
 ```sql
 SELECT Sname NAME,'Year of Birth:' BIRTH,
@@ -370,56 +370,56 @@ SELECT Sname NAME,'Year of Birth:' BIRTH,
 ---
 
 <a name="消除取值重复的行"></a>
-#### 消除取值重复的行。
+#### ⭐ 消除取值重复的行。
 
 ```sql
 SELECT DISTINCT Sage FROM Student;
 ```
 <div align="left">
-	<img src="pics/sage.png" width=200px>
-	<img src="pics/distinct.png" width=200px>
+	<img src="pics/sage.png" width=100px>
+	<img src="pics/distinct.png" width=100px>
 </div>
 
 ---
 
 <a name="通过where来查询满足条件的元组"></a>
-#### 通过where来查询满足条件的元组：查询"计科学院"全体学生的名单。
+#### ⭐ 通过where来查询满足条件的元组：查询"计科学院"全体学生的名单。
 
 ```sql
 SELECT Sno,Sname FROM Student 
 	WHERE Sdept='计科学院';
 ```
 <div align="left">
-	<img src="pics/where1.png" width=300px>
+	<img src="pics/where1.png" width=200px>
 </div>
 
 ---
 
-#### 通过where来查询满足条件的元组：查询年龄在20岁以下的学生姓名及其年龄。
+#### ⭐ 通过where来查询满足条件的元组：查询年龄在20岁以下的学生姓名及其年龄。
 
 ```sql
 SELECT Sname,Sage FROM Student 
 	WHERE Sage<20;
 ```
 <div align="left">
-	<img src="pics/where2.png" width=300px>
+	<img src="pics/where2.png" width=200px>
 </div>
     
 ---
 
-#### 通过where来查询满足条件的元组：考试成绩大于等于90。
+#### ⭐ 通过where来查询满足条件的元组：考试成绩大于等于90。
 
 ```sql
 SELECT DISTINCT Sno FROM SC
 	WHERE Grade<60;
 ```
 <div align="left">
-	<img src="pics/where3.png" width=200px>
+	<img src="pics/where3.png" width=100px>
 </div>
 	
 ---
 	
-#### 通过where来查询满足条件的元组：查询年龄在20~23岁（包括20岁和23岁）的学生信息。
+#### ⭐ 通过where来查询满足条件的元组：查询年龄在20~23岁（包括20岁和23岁）的学生信息。
 
 ```sql
 SELECT * FROM Student
@@ -431,7 +431,7 @@ SELECT * FROM Student
 
 ---
 	
-#### 通过where来查询满足条件的元组：查询年龄不在20~23岁（包括20岁和23岁）的学生信息。
+#### ⭐ 通过where来查询满足条件的元组：查询年龄不在20~23岁（包括20岁和23岁）的学生信息。
 
 ```sql
 SELECT * FROM Student
@@ -443,7 +443,7 @@ SELECT * FROM Student
 
 ---
 	
-#### 通过where来查询满足条件的元组：查询年龄为18岁和21岁的学生信息。
+#### ⭐ 通过where来查询满足条件的元组：查询年龄为18岁和21岁的学生信息。
 
 ```sql
 SELECT * FROM Student
@@ -455,7 +455,7 @@ SELECT * FROM Student
 
 ---
 	
-#### 通过where来查询满足条件的元组：查询年龄不为18岁和21岁的学生信息。
+#### ⭐ 通过where来查询满足条件的元组：查询年龄不为18岁和21岁的学生信息。
 
 ```sql
 SELECT * FROM Student
@@ -467,19 +467,19 @@ SELECT * FROM Student
 	
 ---
 	
-#### 通过where来查询满足条件的元组：查询所有陈姓的学生信息。
+#### ⭐ 通过where来查询满足条件的元组：查询所有陈姓的学生信息。
 
 ```sql
 SELECT Sno,Sname,Ssex FROM Student
 	WHERE Sname LIKE '陈%';
 ```
 <div align="left">
-	<img src="pics/where8.png" width=400px>
+	<img src="pics/where8.png" width=300px>
 </div>
 
 ---
 	
-#### 通过where来查询满足条件的元组：查询学号为201711010x的学生信息。
+#### ⭐ 通过where来查询满足条件的元组：查询学号为201711010x的学生信息。
 
 ```sql
 SELECT * FROM Student
