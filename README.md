@@ -50,7 +50,7 @@
 	<img src="https://github.com/fmw666/Database-System/blob/master/pics/noodle.jpg" width=150px>
 </div>
 
-## ★ 关系数据库及标准语言SQL ★
+# ★ 关系数据库及标准语言SQL ★
 &emsp;&emsp;🛢 **结构化查询语言（Structured Query Language， SQL）** 是关系数据库的标准语言，也是一个通用的、功能极强的关系数据库语言。其功能不仅仅是查询，而是包括数据库模式创建、数据库数据的插入与修改、数据库安全性完整性定义与控制等一系列功能。
 
 <div align="center">
@@ -499,7 +499,7 @@ SELECT * FROM Student
 
 <br><br><br><br>
 
-## ★ 非关系型的数据库NoSQL ★
+# ★ 非关系型的数据库NoSQL ★
 
 <div align="center">
 	<img src="https://github.com/fmw666/Database-System/blob/master/pics/zhouyi.jpeg" width=200px>
@@ -507,18 +507,18 @@ SELECT * FROM Student
 
 &emsp;&emsp;**🛢 NoSQL(NoSQL = Not Only SQL )，意为"不仅仅是SQL"** ，是对不同于传统的关系型数据库的数据库管理系统的统称。NoSQL 是一项全新的数据库革命性运动，早期就有人提出，发展至2009年趋势越发高涨。NoSQL的拥护者们提倡运用非关系型的数据存储，相对于铺天盖地的关系型数据库运用，这一概念无疑是一种全新的思维的注入。
 <br>
-### ☆ 基于分布式文件存储的数据库 MongoDB
+## ☆ 基于分布式文件存储的数据库 MongoDB
 + 💡 MongoDB 是由 C++ 语言编写的，是一个基于分布式文件存储的开源数据库系统。
 + 💡 MongoDB 是为快速开发互联网 Web 应用而设计的数据库系统。
 + 💡 MongoDB 的设计目标是极简、灵活、作为 Web 应用栈的一部分。
 + 💡 MongoDB 的数据模型是面向文档的，所谓文档是一种类似于 JSON 的结构。
 
-#### MongoDB 的产生
+### MongoDB 的产生
 &emsp;&emsp;🗓 2007年10月，MongoDB由10gen团队所发展。2009年2月首度推出。
 
-#### 支持语言
+### 支持语言
 
-|||||||||||||||
+
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 |C|C++|C#/.NET|Erlang|Haskell|Java|JavaScript|Lisp|node.JS|Perl|PHP|Python|Ruby|Scala|
 
