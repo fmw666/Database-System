@@ -554,6 +554,8 @@ SELECT * FROM Student
 
 &emsp;&emsp;要启动也很简单，在你下载好的 adminMongo 文件夹下，执行命令行命令：`npm start`，即可通过 `127.0.0.1:1234` 端口来访问此工具。
 
+<img src="pics/adminMongodb.png" width="1000">
+
 ### Python MongoDB
 &emsp;&emsp;⚙ Python 要连接 MongoDB 需要 MongoDB 驱动，这里我们使用 PyMongo 驱动来连接。我们直接使用 pip 来安装即可：
 
