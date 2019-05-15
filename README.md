@@ -58,7 +58,7 @@
   
   &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;⚡ [删除数据](#)
   
-  &emsp;&emsp;&emsp;&emsp;⭐ [MongoDB 可视化工具](#MongoDB 的产生)
+  &emsp;&emsp;&emsp;&emsp;⭐ [MongoDB 可视化工具](#)
   
   &emsp;&emsp;📚 **[高性能的key-value数据库 Redis](#no)**
 
@@ -542,8 +542,11 @@ SELECT * FROM Student
 
 + 官方 Github 项目地址为：[https://github.com/mongodb/mongo](https://github.com/mongodb/mongo)
 
-&emsp;&emsp;🗝 在下载好的 MongoDB 文件夹下，找到其 `bin` 目录（`mongod.exe` 所在目录），在命令行窗口
-  
+&emsp;&emsp;🗝 在下载好的 MongoDB 文件夹下，找到其 `bin` 目录（`mongod.exe` 所在目录），在命令行窗口中执行如下命令：
+  ```bash
+	mongod.exe --nojournal --dbpath .
+	```
+
 ### Python MongoDB
 &emsp;&emsp;⚙ Python 要连接 MongoDB 需要 MongoDB 驱动，这里我们使用 PyMongo 驱动来连接。我们直接使用 pip 来安装即可：
 
