@@ -520,9 +520,21 @@ SELECT * FROM Student
   |:-:|:-:|:-:|:-:|:-:|:-:|:-:|
   |C|C++|C#/.NET|Erlang|Haskell|Java|JavaScript|
   |Lisp|node.JS|Perl|PHP|Python|Ruby|Scala|
+  
+### Python MongoDB
+&emsp;&emsp;Python 要连接 MongoDB 需要 MongoDB 驱动，这里我们使用 PyMongo 驱动来连接。我们直接使用 pip 来安装即可：
+
+    ```python
+    $ pip install pymongo
+    ```
+    
+    如果要更新 pymongo：
+    ```python
+    $ python -m pip install --upgrade pymongo
+    ```
 
 ---
 
 [返回目录⬆](#目录)
 
-### ☆ 高性能的key-value数据库 Redis
+## ☆ 高性能的key-value数据库 Redis
