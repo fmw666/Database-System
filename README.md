@@ -46,6 +46,10 @@
   
   &emsp;&emsp;&emsp;&emsp;⭐ [MongoDB 的产生](#)
   
+  &emsp;&emsp;&emsp;&emsp;⭐ [MongoDB 的下载及启动](#)
+  
+  &emsp;&emsp;&emsp;&emsp;⭐ [MongoDB 可视化工具](#)
+  
   &emsp;&emsp;&emsp;&emsp;⭐ **[Python MongoDB](#)**
   
   &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;⚡ [连接到数据库](#)
@@ -57,8 +61,6 @@
   &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;⚡ [修改数据](#)
   
   &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;⚡ [删除数据](#)
-  
-  &emsp;&emsp;&emsp;&emsp;⭐ [MongoDB 可视化工具](#)
   
   &emsp;&emsp;📚 **[高性能的key-value数据库 Redis](#no)**
 
@@ -544,8 +546,13 @@ SELECT * FROM Student
 
 &emsp;&emsp;🗝 在下载好的 MongoDB 文件夹下，找到其 `bin` 目录（`mongod.exe` 所在目录），在命令行窗口中执行如下命令：
   ```bash
-	mongod.exe --nojournal --dbpath .
-	```
+  mongod.exe --nojournal --dbpath .
+  ```
+  
+### MongoDB 可视化工具
+&emsp;&emsp;🔮 这里推荐一款 mongo可视化工具 [adminMongo](https://adminmongo.markmoffat.com/)，官方下载地址为：[https://github.com/mrvautin/adminMongo/releases](https://github.com/mrvautin/adminMongo/releases) 
+
+&emsp;&emsp;要启动也很简单，在你下载好的 adminMongo 文件夹下，执行命令行命令：`npm start`，即可通过 `127.0.0.1:1234` 端口来访问此工具。
 
 ### Python MongoDB
 &emsp;&emsp;⚙ Python 要连接 MongoDB 需要 MongoDB 驱动，这里我们使用 PyMongo 驱动来连接。我们直接使用 pip 来安装即可：
@@ -560,14 +567,14 @@ SELECT * FROM Student
   ```
 
 + 连接到数据库
-	```python
-	import pymongo
-	
-	# 方式一：指定端口和地址
-	client1 = MongoClient('localhost', 27017)
-	# 方式二：使用 URI
-	client2 = MongoClient('mongodb://localhost:27017/')
-	```
+  ```python
+  import pymongo
+  
+  # 方式一：指定端口和地址
+  client1 = MongoClient('localhost', 27017)
+  # 方式二：使用 URI
+  client2 = MongoClient('mongodb://localhost:27017/')
+  ```
 
 ---
 
