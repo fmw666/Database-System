@@ -516,12 +516,10 @@ SELECT * FROM Student
 ### MongoDB 的产生
 &emsp;&emsp;🗓 2007年10月，MongoDB由10gen团队所发展。2009年2月首度推出。
 
-### 支持语言
-
-|编程语言|   |   |   |   |   |   |
-|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-|C|C++|C#/.NET|Erlang|Haskell|Java|JavaScript|
-|Lisp|node.JS|Perl|PHP|Python|Ruby|Scala|
+  |支持语言|   |   |   |   |   |   |
+  |:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+  |C|C++|C#/.NET|Erlang|Haskell|Java|JavaScript|
+  |Lisp|node.JS|Perl|PHP|Python|Ruby|Scala|
 
 ---
 
