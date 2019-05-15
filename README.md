@@ -44,9 +44,9 @@
   
   &emsp;&emsp;📚 **[基于分布式文件存储的数据库 MongoDB](#-基于分布式文件存储的数据库-mongoDB)**
   
-  &emsp;&emsp;&emsp;&emsp;⭐ [MongoDB 的产生](#MongoDB 的产生)
+  &emsp;&emsp;&emsp;&emsp;⭐ [MongoDB 的产生](#)
   
-  &emsp;&emsp;&emsp;&emsp;⭐ **[Python MongoDB](#MongoDB 的产生)**
+  &emsp;&emsp;&emsp;&emsp;⭐ **[Python MongoDB](#)**
   
   &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;⚡ [连接到数据库](#)
   
