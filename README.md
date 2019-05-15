@@ -508,9 +508,19 @@ SELECT * FROM Student
 &emsp;&emsp;**🛢 NoSQL(NoSQL = Not Only SQL )，意为"不仅仅是SQL"** ，是对不同于传统的关系型数据库的数据库管理系统的统称。NoSQL 是一项全新的数据库革命性运动，早期就有人提出，发展至2009年趋势越发高涨。NoSQL的拥护者们提倡运用非关系型的数据存储，相对于铺天盖地的关系型数据库运用，这一概念无疑是一种全新的思维的注入。
 <br>
 ### ☆ 基于分布式文件存储的数据库 MongoDB
++ 💡 MongoDB 是由 C++ 语言编写的，是一个基于分布式文件存储的开源数据库系统。
 + 💡 MongoDB 是为快速开发互联网 Web 应用而设计的数据库系统。
 + 💡 MongoDB 的设计目标是极简、灵活、作为 Web 应用栈的一部分。
 + 💡 MongoDB 的数据模型是面向文档的，所谓文档是一种类似于 JSON 的结构。
+
+#### MongoDB 的产生
+&emsp;&emsp;🗓 2007年10月，MongoDB由10gen团队所发展。2009年2月首度推出。
+
+#### 支持语言
+
+|||||||||||||||
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+|C|C++|C#/.NET|Erlang|Haskell|Java|JavaScript|Lisp|node.JS|Perl|PHP|Python|Ruby|Scala|
 
 ---
 
