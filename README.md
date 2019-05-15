@@ -511,3 +511,9 @@ SELECT * FROM Student
 + 💡 MongoDB 是为快速开发互联网 Web 应用而设计的数据库系统。
 + 💡 MongoDB 的设计目标是极简、灵活、作为 Web 应用栈的一部分。
 + 💡 MongoDB 的数据模型是面向文档的，所谓文档是一种类似于 JSON 的结构。
+
+---
+
+[返回目录⬆](#目录)
+
+### ☆ 高性能的key-value数据库 Redis
