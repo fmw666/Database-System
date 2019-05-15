@@ -524,14 +524,14 @@ SELECT * FROM Student
 ### Python MongoDB
 &emsp;&emsp;Python 要连接 MongoDB 需要 MongoDB 驱动，这里我们使用 PyMongo 驱动来连接。我们直接使用 pip 来安装即可：
 
-    ```python
-    $ pip install pymongo
-    ```
+  ```python
+  $ pip install pymongo
+  ```
     
-    如果要更新 pymongo：
-    ```python
-    $ python -m pip install --upgrade pymongo
-    ```
+  如果要更新 pymongo：
+  ```python
+  $ python -m pip install --upgrade pymongo
+  ```
 
 ---
 
