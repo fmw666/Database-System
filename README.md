@@ -518,9 +518,10 @@ SELECT * FROM Student
 
 ### 支持语言
 
-
-|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-|C|C++|C#/.NET|Erlang|Haskell|Java|JavaScript|Lisp|node.JS|Perl|PHP|Python|Ruby|Scala|
+|编程语言|   |   |   |   |   |   |
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+|C|C++|C#/.NET|Erlang|Haskell|Java|JavaScript|
+|Lisp|node.JS|Perl|PHP|Python|Ruby|Scala|
 
 ---
 
