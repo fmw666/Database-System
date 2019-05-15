@@ -44,6 +44,8 @@
   
   &emsp;&emsp;📚 **[基于分布式文件存储的数据库 MongoDB](#-基于分布式文件存储的数据库-mongoDB)**
   
+  &emsp;&emsp;&emsp;&emsp;⭐ [表示查看表中所有数据](#表示查看表中所有数据)
+  
   &emsp;&emsp;📚 **[高性能的key-value数据库 Redis](#no)**
 
 <div align="center">
