@@ -544,7 +544,7 @@ SELECT * FROM Student
 
 + 官方 Github 项目地址为：[https://github.com/mongodb/mongo](https://github.com/mongodb/mongo)
 
-&emsp;&emsp;🗝 在下载好的 MongoDB 文件夹下，找到其 `bin` 目录（`mongod.exe` 所在目录），在命令行窗口中执行如下命令：
+🔒如何启动 MongoDB？ 🗝 在下载好的 MongoDB 文件夹下，找到其 `bin` 目录（`mongod.exe` 所在目录），在命令行窗口中执行如下命令：
   ```bash
   mongod.exe --nojournal --dbpath .
   ```
@@ -567,6 +567,7 @@ SELECT * FROM Student
   ```
 
 + 连接到数据库
+
   ```python
   import pymongo
   
